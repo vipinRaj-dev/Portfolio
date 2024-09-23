@@ -1,5 +1,5 @@
-import { motion, useInView } from 'framer-motion';
-import { useRef } from 'react';
+import { motion, useInView } from "framer-motion";
+import { useRef } from "react";
 import { PROJECTS } from "../constants";
 
 const Projects = () => {
@@ -13,8 +13,11 @@ const Projects = () => {
           const isInView = useInView(projectRef, { once: true });
 
           return (
-            <div key={index} ref={projectRef} className="mb-8 flex flex-wrap lg:justify-center">
-              
+            <div
+              key={index}
+              ref={projectRef}
+              className="mb-8 flex flex-wrap lg:justify-center"
+            >
               {/* Image Animation: Slide from Left */}
               <motion.div
                 className="w-full lg:w-1/4"
@@ -24,8 +27,8 @@ const Projects = () => {
               >
                 <img
                   src={project.image}
-                  width={150}
-                  height={150}
+                  width={300}
+                  height={300}
                   alt={project.title}
                   className="mb-6 rounded"
                 />
@@ -34,24 +37,23 @@ const Projects = () => {
               {/* Text Animation: Slide from Right */}
               <motion.div
                 className="w-full max-w-xl lg:w-3/4"
-                initial={{ opacity: 0, x: 100 }} // Start off to the right
-                animate={isInView ? { opacity: 1, x: 0 } : {}} // Slide into view when in viewport
-                transition={{ duration: 1, delay: 0.4 }} // Delay for smooth entry
+                initial={{ opacity: 0, x: 100 }}
+                animate={isInView ? { opacity: 1, x: 0 } : {}}
+                transition={{ duration: 1, delay: 0.4 }}
               >
                 <h6 className="mb-2 font-semibold">{project.title}</h6>
                 <p className="mb-4 text-neutral-400">{project.description}</p>
-                <div>
+                <div className=" flex flex-wrap gap-2">
                   {project.technologies.map((tech, techIndex) => (
                     <span
                       key={techIndex}
-                      className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium"
+                      className=" rounded bg-neutral-900 px-2 py-1 text-sm font-medium"
                     >
                       {tech}
                     </span>
                   ))}
                 </div>
               </motion.div>
-
             </div>
           );
         })}
