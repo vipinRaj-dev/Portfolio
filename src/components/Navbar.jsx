@@ -5,7 +5,7 @@ import { FaGithub } from "react-icons/fa";
 import { SiReaddotcv } from "react-icons/si";
 
 const Navbar = () => {
-  const fileUrl = "/Vipin raj CV.pdf";
+  const fileUrl = "/vipin raj cv 1.pdf";
 
   return (
     <nav className=" mb-20 flex items-center justify-between py-6">
