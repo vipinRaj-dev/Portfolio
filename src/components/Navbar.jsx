@@ -26,7 +26,7 @@ const Navbar = () => {
           onClick={() => {
             const link = document.createElement("a");
             link.href = fileUrl;
-            link.download = "Vipin raj CV.pdf"; // The name of the file after download
+            link.download = "vipin raj cv 1.pdf"; // The name of the file after download
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link); // Clean up
