@@ -91,17 +91,17 @@ export const PROJECTS = [
       "A personal portfolio website showcasing projects, skills, and contact information.",
     technologies: ['React.Js' , "Tailwind.css" , "versel", "Framer motion"],
   },
-  {
-    title: "banquee",
-    image: project5,
-    description:
-      "Converted a beautifully designed Figma into a fully responsive application using the latest technologies.",
-    technologies: ["HTML", "CSS", "React.Js", "Tailwind.css"],
-  },
+  // {
+  //   title: "banquee",
+  //   image: project5,
+  //   description:
+  //     "Converted a beautifully designed Figma into a fully responsive application using the latest technologies.",
+  //   technologies: ["HTML", "CSS", "React.Js", "Tailwind.css"],
+  // },
 ];
 
 export const CONTACT = {
   address: "Trivandrum kerala India ",
-  phoneNo: "+91 7902992374",
+  phoneNo: "+91 9645856702",
   email: "vipinrj8473@gmail.com",
 };
